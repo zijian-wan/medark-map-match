@@ -1,6 +1,6 @@
 # Medark: A map-matching error detection and rectification framework for vehicle trajectories
 This is a trajectory interpolation model based on long short-term memory (LSTM) and generative adversarial network (GAN) that takes as an input a trajectory containing a gap (i.e., a sequence of missing tracking points) and outputs the interpolated complete trajectory.
-![]()
+![](figures/LSTM_Architecture.png)
 
 **Citation info:**
 > Wan, Z., & Dodge, S. (Provisionally accepted by IJGIS). Medark: A map-matching error detection and rectification framework for vehicle trajectories.
