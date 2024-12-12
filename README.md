@@ -27,8 +27,14 @@ selection, and error introduction in map-matched tracking points, which correspo
 ### Data
 `labeled184_pts_traj_ptid.pkl` is the pickled data of manually labeled 184 trajectories. Each erroneous point (map-matching error) is labeled 1, while other tracking points are labeled 0. \
 It can be loaded as \
-`pk_name = "labeled184_pts_traj_ptid.pkl"` \
-`with open(` \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`os.path.join(proj_dir, "Data", pk_name), 'rb'` \
-`) as my_file_obj:` \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`pts_gdf, traj_ptid_ls = pickle.load(my_file_obj)`
+```python
+import os
+import pickle
+
+
+pk_name = "labeled184_pts_traj_ptid.pkl"
+with open(
+   os.path.join(proj_dir, "Data", pk_name), 'rb'
+) as my_file_obj:
+   pts_gdf, traj_ptid_ls = pickle.load(my_file_obj)
+```
